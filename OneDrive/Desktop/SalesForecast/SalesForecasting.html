@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mart Sales Analytics Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Dashboard container -->
+    <div class="dashboard">
+       <!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <span class="logo-icon">📊</span>
+        <span>SalesInsight</span>
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="#overview" class="nav-item active">
+            <span>▣</span>
+            Overview
+        </a>
+
+        <a href="#sales" class="nav-item">
+            <span>◈</span>
+            Sales Analysis
+        </a>
+
+        <a href="#outlets" class="nav-item">
+            <span>◉</span>
+            Outlet Analysis
+        </a>
+
+        <a href="#models" class="nav-item">
+            <span>◆</span>
+            ML Models
+        </a>
+
+        <a href="#insights" class="nav-item">
+            <span>✦</span>
+            Insights
+        </a>
+
+        <a href="#recommendations" class="nav-item">
+            <span>✓</span>
+            Recommendations
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+
+        <p>Sales Prediction</p>
+
+        <small>
+            Machine Learning Project
+        </small>
+
+    </div>
+
+</aside>
+    <!-- MAIN CONTENT BLOCK -->
+
+<main class="main-content">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="page-label">
+                SALES ANALYTICS
+            </p>
+
+            <h1>
+                Mart Sales Dashboard
+            </h1>
+
+        </div>
+
+
+        <div class="project-badge">
+
+            <span class="status-dot"></span>
+
+            ML Analysis
+
+        </div>
+
+    </header>
+    <!-- Header section -->
+
+<section class="hero-card" id="overview">
+
+    <div class="hero-text">
+
+        <p class="eyebrow">
+            MACHINE LEARNING_SALES ANALYTICS
+        </p>
+
+        <h2>
+            Understanding & Predicting
+            Item Outlet Sales
+        </h2>
+
+        <p>
+            An analytical dashboard built from the Mart
+            sales dataset to understand product performance,
+            outlet characteristics and machine-learning base
+            sales predictions.
+        </p>
+
+        <div class="hero-tags">
+
+            <span>EDA</span>
+            <span>Feature Engineering</span>
+            <span>Regression</span>
+            <span>Business Insights</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="hero-icon">
+            📈
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- KPI CARDS -->
+
+<section class="kpi-grid">
+
+    <div class="kpi-card">
+
+        <div class="kpi-icon">
+            📦
+        </div>
+
+        <div>
+
+            <p class="kpi-label">
+                Training Records
+            </p>
+
+            <h3>
+                8,523
+            </h3>
+
+            <span class="kpi-note">
+                Dataset observations
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+        <div class="kpi-icon">
+            🏪
+        </div>
+
+        <div>
+
+            <p class="kpi-label">
+                Sales Target
+            </p>
+
+            <h3>
+                Item Outlet Sales
+            </h3>
+
+            <span class="kpi-note">
+                Prediction variable
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+        <div class="kpi-icon">
+            🤖
+        </div>
+
+        <div>
+
+            <p class="kpi-label">
+                Best Model
+            </p>
+
+            <h3>
+                Random Forest
+            </h3>
+
+            <span class="kpi-note">
+                Validation comparison
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="kpi-card">
+
+        <div class="kpi-icon">
+            🎯
+        </div>
+
+        <div>
+
+            <p class="kpi-label">
+                Validation R²
+            </p>
+
+            <h3>
+                0.611
+            </h3>
+
+            <span class="kpi-note">
+                Random Forest
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SALES ANALYSIS -->
+
+<section class="dashboard-section" id="sales">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                EXPLORATORY ANALYSIS
+            </p>
+
+            <h2>
+                Sales Performance
+            </h2>
+
+        </div>
+
+        <p>
+            Understanding the distribution and major
+            drivers of sales.
+        </p>
+
+    </div>
+
+
+    <div class="chart-grid">
+
+
+        <div class="chart-card large">
+
+            <div class="chart-header">
+
+                <h3>
+                    Item Outlet Sales Distribution
+                </h3>
+
+                <span>
+                    Target Analysis
+                </span>
+
+            </div>
+
+            <img
+                src="images/SalesDistbyO.png"
+                alt="Sales distribution">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    MRP vs Sales
+                </h3>
+
+                <span>
+                    Relationship
+                </span>
+
+            </div>
+
+            <img
+                src="images/MRPvsSales.png"
+                alt="MRP versus sales">
+
+        </div>
+
+
+    </div>
+
+</section>
+    <!-- BUSINESS ANALYSIS -->
+
+<section class="dashboard-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                BUSINESS ANALYTICS
+            </p>
+
+            <h2>
+                Product & Sales Insights
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="chart-grid">
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    Total Sales by Item
+                </h3>
+
+            </div>
+
+            <img
+                src="images/totalsales.png"
+                alt="Total sales by item">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    Top Business Segments
+                </h3>
+
+            </div>
+
+            <img
+                src="images/Top15business.png"
+                alt="Top business segments">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- MACHINE LEARNING -->
+
+<section class="dashboard-section" id="models">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                MACHINE LEARNING
+            </p>
+
+            <h2>
+                Model Performance
+            </h2>
+
+        </div>
+
+        <p>
+            Regression models were evaluated using
+            sales prediction metrics.
+        </p>
+
+    </div>
+
+
+    <div class="model-layout">
+
+
+        <div class="model-summary">
+
+            <div class="best-model">
+
+                <span class="crown">
+                    ★
+                </span>
+
+                <div>
+
+                    <p>
+                        BEST VALIDATION MODEL
+                    </p>
+
+                    <h3>
+                        Random Forest
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="metric-row">
+
+                <div>
+
+                    <span>
+                        RMSE
+                    </span>
+
+                    <strong>
+                        1,028.06
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        MAE
+                    </span>
+
+                    <strong>
+                        718.20
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        R²
+                    </span>
+
+                    <strong>
+                        0.611
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    Model Comparison
+                </h3>
+
+            </div>
+
+            <img
+                src="images/ModelPerformanceComp.png"
+                alt="Model performance comparison">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<section class="dashboard-section">
+
+    <div class="chart-grid">
+
+        <div class="chart-card full">
+
+            <div class="chart-header">
+
+                <div>
+
+                    <h3>
+                        Feature Importance
+                    </h3>
+
+                    <p>
+                        Variables contributing to model predictions
+                    </p>
+
+                </div>
+
+            </div>
+
+            <img
+                src="images/Top15business.png"
+                alt="Feature importance analysis">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PREDICTION ANALYSIS -->
+
+<section class="dashboard-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                MODEL DIAGNOSTICS
+            </p>
+
+            <h2>
+                Prediction Quality
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="chart-grid">
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    Actual vs Predicted Sales
+                </h3>
+
+            </div>
+
+            <img
+                src="images/AcvsPred.png"
+                alt="Actual versus predicted sales">
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>
+                    Prediction Errors
+                </h3>
+
+            </div>
+
+            <img
+                src="images/errorPrediction.png"
+                alt="Prediction error analysis">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+    </div>
+
+</body>
+
+</html>
